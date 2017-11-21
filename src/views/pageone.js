@@ -126,7 +126,7 @@ class pageone extends Component {
                               </div>
                   	</div>
                   </div>
-                  <div className="footer"></div>
+                  <footer class="footer"></footer>
             </div>
         );
     }

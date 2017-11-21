@@ -49,6 +49,8 @@ body {
     flex: 1;
     display: @flex;
     margin: 1% 5%;
+    overflow: hidden;
+    height: 100%;
 
     .label {
         font-size: @font20;
@@ -239,10 +241,11 @@ body {
     }
 
     .right-content {
-        box-shadow: 1px 0px 11px #ddd;
         flex: .3;
         display: flex;
         flex-direction: column;
+        box-shadow: 0px 0px 12px #ddd;
+        border: 1px solid #e4e4e4;
 
         @media @normal-screen {
             flex: .4;
@@ -279,6 +282,7 @@ body {
             margin-top: -65px;
             z-index: 2;
             position: relative;
+            background: @white-color;
 
                 .sub-title {
                     font-size: 22px;
@@ -291,5 +295,16 @@ body {
 
 }
 
+.footer {
+    position: fixed;
+    bottom: -100px;
+    background: #f6f8f9;;
+    height: 350px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    transform: skewY(-8deg);
+    right: 0;
+}
 
 

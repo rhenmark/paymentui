@@ -20,6 +20,8 @@ body {
   flex: 1;
   display: flex;
   margin: 1% 5%;
+  overflow: hidden;
+  height: 100%;
 }
 .container .label {
   font-size: 20px;
@@ -96,7 +98,7 @@ body {
 }
 .container .left-content .col-6 .btn-txt {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
 }
 .container .left-content .col-6 .btn-gradient {
   background: #62d397;
@@ -185,10 +187,11 @@ body {
   width: 100%;
 }
 .container .right-content {
-  box-shadow: 1px 0px 11px #ddd;
   flex: .3;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 12px #ddd;
+  border: 1px solid #e4e4e4;
 }
 @media screen and (max-width: 1280px) {
   .container .right-content {
@@ -223,7 +226,19 @@ body {
   margin-top: -65px;
   z-index: 2;
   position: relative;
+  background: #ffffff;
 }
 .container .right-content .content .sub-title {
   font-size: 22px;
+}
+.footer {
+  position: fixed;
+  bottom: -100px;
+  background: #f6f8f9;
+  height: 350px;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-8deg);
+  right: 0;
 }
